@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>Payment Success - CredentialAuditor Pro</title>
+<style>body{font-family:Arial;background:#0f172a;color:white;display:flex;justify-content:center;align-items:center;min-height:100vh;margin:0;text-align:center} .box{background:#1e293b;padding:40px;border-radius:15px;max-width:600px} h1{color:#22c55e} .code{background:#000;color:#0f0;padding:15px;font-family:mono;font-size:18px;border-radius:8px;margin:15px 0;letter-spacing:1px} a.btn{background:#6366f1;color:white;padding:12px 24px;border-radius:8px;text-decoration:none;display:inline-block;margin:10px}</style>
+</head><body>
+<div class="box">
+<h1>✅ Payment Successful!</h1>
+<h2>Welcome to CredentialAuditor Pro</h2>
+<p>Your subscription is active. Your offline license:</p>
+<div class="code" id="license">OWNER-XXXX-2026-PRO</div>
+<p>📧 Check mitchell5584dm@gmail.com for full key<br>Save this code - it unlocks everything offline</p>
+<p style="font-size:13px;opacity:.7">Test Mode: Use RETIRESEC-OWNER-ALL-ACCESS or TRIAL-F3C3B0-2026<br>Live: Will email real OWNER key</p>
+<a href="/" class="btn">← Back to Workbench</a>
+<a href="#" onclick="navigator.clipboard.writeText(document.getElementById('license').innerText);alert('Copied!')" class="btn" style="background:#22c55e">Copy License</a>
+<script>
+const params=new URLSearchParams(window.location.search);
+let email=params.get('email')||'PRO-USER';
+let rand=Math.random().toString(36).substring(2,8).toUpperCase();
+document.getElementById('license').innerText=`OWNER-${rand}-2026-PRO`;
+</script>
+</div>
+</body></html>
