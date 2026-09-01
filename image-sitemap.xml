@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://arcana-forensics.com/media.html</loc>
+    <image:image>
+      <image:loc>https://arcana-forensics.com/assets/arcana-forensics-official-logo.png</image:loc>
+      <image:title>Arcana Forensics Official Logo</image:title>
+      <image:caption>Official logo for Arcana Forensics and the Security Operations Forensics Toolkit</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://arcana-forensics.com/</loc>
+    <image:image>
+      <image:loc>https://arcana-forensics.com/assets/arcana-forensics-official-logo.png</image:loc>
+      <image:title>Arcana Forensics Brand Asset</image:title>
+      <image:caption>Arcana Forensics offline-first digital forensics suite logo</image:caption>
+    </image:image>
+  </url>
+</urlset>
