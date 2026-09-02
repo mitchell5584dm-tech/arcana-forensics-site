@@ -1,36 +1,31 @@
-# All Programs - Same Stripe - Linking Map
+# Verified link registry
 
-**Primary Stripe Checkout (Live):**
-https://buy.stripe.com/5kQ14m2DQackeP687L5sA00
-14-day trial → $99/yr - CredentialAuditor Pro
-Same Stripe Account ID used for all below
+Last audited: 2026-09-01
 
-**GitHub Repo:**
-https://github.com/mitchell5584dm-tech/Security-Operations-Forensics-Toolkit
-Live site: https://mitchell5584dm-tech.github.io/Security-Operations-Forensics-Toolkit/
+## Canonical destinations
 
-**Releases (Fixed ZIPs):**
-- Free 0.45 MB / 469.1 kB: https://github.com/mitchell5584dm-tech/Security-Operations-Forensics-Toolkit/releases/download/v1.0/RetireSec-Workbench-Free-v1.0.zip
-- Pro 0.02 MB / 16.0 kB: https://github.com/mitchell5584dm-tech/Security-Operations-Forensics-Toolkit/releases/download/v1.0/RetireSec-Workbench-Pro-v1.0.zip
-- Full 0.93 MB / 978.5 kB: https://github.com/mitchell5584dm-tech/Security-Operations-Forensics-Toolkit/releases/download/v1.0/RetireSec-Workbench-Full-Source-v1.0.zip
+- Production site: https://arcana-forensics.com/
+- Repository: https://github.com/mitchell5584dm-tech/arcana-forensics-site
+- Product source/releases: https://github.com/mitchell5584dm-tech/Security-Operations-Forensics-Toolkit
 
-**Web Pages (Same Webpage Family - All Interlinked):**
-- index.html - Main store - ALL programs one Stripe - links to store.html, pro.html, free.html, arcana.html, success.html
-- store.html - Full store - 6 products - all same Stripe account
-- pro.html - Dedicated Pro page - same Stripe
-- free.html - Dedicated Free page - upgrade to same Stripe
-- success.html - Payment success - auto-downloads all 3 ZIPs - Stripe redirect target
-- arcana.html - ARCANA offshoot - Starter/Pro/Elite/Enterprise - same Stripe account, different price tiers (replace href with your other Payment Links from dashboard)
+## Stripe Payment Links verified from rendered checkout
 
-**Stripe Dashboard Setting (After Payment):**
-Payment Links → CredentialAuditor Pro → After payment → Redirect to URL:
-https://mitchell5584dm-tech.github.io/Security-Operations-Forensics-Toolkit/success.html
-OR direct ZIP: https://github.com/mitchell5584dm-tech/Security-Operations-Forensics-Toolkit/releases/download/v1.0/RetireSec-Workbench-Pro-v1.0.zip
+| Intended product | Checkout | Verified checkout display |
+|---|---|---|
+| CredentialAuditor Pro | https://buy.stripe.com/5kQ14m2DQackeP687L5sA00 | 14 days free, then $99/year |
+| PASTE TRAP Standard | https://buy.stripe.com/8x2aEWemyesA9uM4Vz5sA0b | SMB Kit, $499 one time |
+| PASTE TRAP Pro | https://buy.stripe.com/28EdR83HU84c6iA2Nr5sA0c | Enterprise Kit, $999 one time |
 
-**Python Files Linked:**
-- credential_auditor.py - free - no Stripe needed
-- credential_auditor_with_notifications.py - pro - checks Stripe license via https://buy.stripe.com/5kQ14m2DQackeP687L5sA00
-- app.py - webapp launcher - pro - same Stripe
-- webapp/ folder - dashboard - pro - same Stripe
+Do not reuse the CredentialAuditor checkout for ARCANA plans labeled $15/month, $39/month, $49/month, $99/month, $299/year, or $790/year. Those prices do not match the verified Stripe checkout.
 
-All programs same browser flow: GitHub Pages → Stripe Checkout (same account) → success.html → ZIP download
+## Customer path rules
+
+- Free downloads may link directly to a public release.
+- Paid artifacts must not be exposed through an unrestricted pre-payment download link.
+- Paid checkout buttons must name the same product and price Stripe displays.
+- Post-payment delivery must be configured in Stripe or through an authenticated fulfillment service.
+- Production links must use `https://arcana-forensics.com/`, not the retired GitHub Pages marketing URL.
+
+## Revalidation
+
+Recheck this file whenever a Stripe product, price, trial, domain, release, or redirect changes.

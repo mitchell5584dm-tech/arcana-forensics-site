@@ -1,21 +1,22 @@
 # Security Policy
 
-## Supported Versions
+## Supported surface
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+Security fixes are provided for the current production website at https://arcana-forensics.com/ and the latest published release referenced by that site. Older prototypes, duplicate case-variant HTML files, and historical downloads are unsupported unless explicitly identified in a release note.
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+## Reporting a vulnerability
 
-## Reporting a Vulnerability
+Please report vulnerabilities privately through GitHub's private vulnerability reporting feature for this repository. If that feature is unavailable, contact the repository owner through the GitHub profile without posting exploit details publicly.
 
-Use this section to tell people how to report a vulnerability.
+Include:
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+- affected URL, file, or release;
+- reproduction steps and impact;
+- browser/OS or runtime details;
+- a minimal proof of concept with sensitive data removed.
+
+Do not include customer data, credentials, payment information, or live secrets. Please allow a reasonable period for triage and remediation before public disclosure.
+
+## Scope and safe research
+
+Good-faith testing must avoid service disruption, social engineering, accessing other people's data, purchases, or destructive actions. Stripe processes payments; this repository must never contain Stripe secret keys or card data.
