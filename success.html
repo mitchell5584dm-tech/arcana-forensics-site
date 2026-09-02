@@ -1,6 +1,10 @@
 <!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Payment Success - All Programs Same Stripe</title>
-<style>body{background:#0a1426;color:#e6eefc;font-family:system-ui;padding:0} .card{background:#15233f;border:1px solid #20365f;border-radius:16px;padding:24px;max-width:750px;margin:30px auto} .btn{display:block;padding:16px;border-radius:10px;text-align:center;font-weight:800;text-decoration:none;margin:10px 0} .purple{background:#635bff;color:white} .teal{background:#2ee5c8;color:#05101e} nav{padding:12px 6%;background:#0f1d38;border-bottom:1px solid #1e3358;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}</style></head><body>
+<style>body{background:#0a1426;color:#e6eefc;font-family:system-ui;padding:0} .card{background:#15233f;border:1px solid #20365f;border-radius:16px;padding:24px;max-width:750px;margin:30px auto} .btn{display:block;padding:16px;border-radius:10px;text-align:center;font-weight:800;text-decoration:none;margin:10px 0} .purple{background:#635bff;color:white} .teal{background:#2ee5c8;color:#05101e} nav{padding:12px 6%;background:#0f1d38;border-bottom:1px solid #1e3358;display:flex;gap:14px;flex-wrap:wrap;font-size:13px}</style>
+<script src="/meta-pixel.js"></script>
+</head><body>
+<noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=2255314765306462&amp;ev=PageView&amp;noscript=1"></noscript>
+
 <nav><a href="href="index.html"" style="color:#8fb6e6">Main</a><a href="href="store.html"" style="color:#8fb6e6">Store</a><a href="href="success.html"" style="color:#2ee5c8;font-weight:800">Success</a></nav>
 <div class="card">
 <h1>✅ Payment Success - Same Stripe</h1>
@@ -23,4 +27,14 @@ All use same Stripe account for license check.
 <a href="href="store.html"" class="btn" style="border:1px solid #2a426d;color:#cfe0ff">View Full Store (all 6 products same account)</a>
 </div>
 <script>setTimeout(()=>{document.getElementById('pro').click();},3000);</script>
+<script>
+try {
+  if (!sessionStorage.getItem("meta_purchase_tracked")) {
+    fbq("track", "Purchase", {value: 99.00, currency: "USD", content_name: "CredentialAuditor Pro"});
+    sessionStorage.setItem("meta_purchase_tracked", "1");
+  }
+} catch (error) {
+  fbq("track", "Purchase", {value: 99.00, currency: "USD", content_name: "CredentialAuditor Pro"});
+}
+</script>
 </body></html>

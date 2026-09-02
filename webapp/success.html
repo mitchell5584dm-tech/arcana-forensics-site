@@ -4,7 +4,11 @@
 .box{background:#1e293b;padding:40px;border-radius:16px;text-align:center;max-width:600px}
 h1{color:#22c55e} .code{background:#000;color:#0f0;padding:16px;font-family:monospace;font-size:20px;border-radius:8px;margin:20px 0}
 a{background:#6366f1;color:white;padding:12px 24px;border-radius:8px;text-decoration:none;display:inline-block;margin:5px}</style>
-</head><body><div class="box">
+
+<script src="/meta-pixel.js"></script>
+</head><body>
+<noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=2255314765306462&amp;ev=PageView&amp;noscript=1"></noscript>
+<div class="box">
 <h1>✅ Payment Success!</h1>
 <h2>CredentialAuditor Pro Active</h2>
 <p>Your 14-day trial started. You'll be billed $99/yr on Aug 25.</p>
@@ -18,4 +22,14 @@ a{background:#6366f1;color:white;padding:12px 24px;border-radius:8px;text-decora
 let r=Math.random().toString(36).toUpperCase().slice(2,7);
 document.getElementById('lic').innerText=`OWNER-${r}-2026-PRO`;
 </script>
-</div></body></html>
+</div><script>
+try {
+  if (!sessionStorage.getItem("meta_purchase_tracked")) {
+    fbq("track", "Purchase", {value: 99.00, currency: "USD", content_name: "CredentialAuditor Pro"});
+    sessionStorage.setItem("meta_purchase_tracked", "1");
+  }
+} catch (error) {
+  fbq("track", "Purchase", {value: 99.00, currency: "USD", content_name: "CredentialAuditor Pro"});
+}
+</script>
+</body></html>
